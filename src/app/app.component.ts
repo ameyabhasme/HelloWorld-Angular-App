@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'HelloWorld';
   imgUrl = "";
   url = ""; 
+  userName: string="";
 
   ngOnInit(): void {
     this.title = "Hello from BridgeLabz!"
@@ -20,4 +21,8 @@ export class AppComponent {
     console.log("Save button is clicked", $event);
     window.open(this.url, "_blank");
   }
+  // onInput($event){
+  //   console.log("In the Input tag", $event);
+
+  // }
 }
