@@ -7,9 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'HelloWorld';
-  imgUrl="../assets/BridgeLabz-2square.jpg";
+  imgUrl = "";
+  url = ""; 
 
-  ngOnInit(): void{
+  ngOnInit(): void {
     this.title = "Hello from BridgeLabz!"
+    this.imgUrl = "../assets/BridgeLabz-2square.jpg";
+    this.url = "https://www.bridgelabz.com";
+  }
+
+  onClick($event: any) {
+    console.log("Save button is clicked", $event);
+    window.open(this.url, "_blank");
   }
 }
