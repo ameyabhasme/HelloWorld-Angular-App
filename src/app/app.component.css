@@ -1,4 +1,9 @@
-.div {
+div {
    text-align: center;
    font-size: large;
+}
+img{
+   display: block;
+   margin: auto;
+   width: 25%;
 }
